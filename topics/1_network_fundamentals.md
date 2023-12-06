@@ -536,10 +536,7 @@ We can still connect to the device if we have physical access and a console cabl
 
 The console port is commonly used for initial configuration when we have physical access to the device.
 
-<video controls>
-  <source src="../img/packet_tracer_console_connection.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OQatMpcK7l4?si=QCEvCV_jIznubh8D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ## TCP
