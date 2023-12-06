@@ -499,11 +499,48 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both pr
 
 Choosing between TCP and UDP depends on the specific needs of the application. TCP is more suitable for scenarios where accuracy and completeness of data are vital, while UDP is preferred when speed and real-time delivery are more critical than perfect data integrity.
 
+## TIA 568
+
+TIA/EIA-568 is a set of telecommunications standards from the Telecommunications Industry Association (TIA) and the Electronic Industries Alliance (EIA).
+
+TIA/EIA-568 standards primarily focus on the design and installation of structured cabling systems used in commercial buildings for data or voice communications.
+
+TIA/EIA-568-A and TIA/EIA-568-B are different revisions or versions of the same set of standards for telecommunications cabling specifications.
+
+- TIA/EIA-568-A: This was the initial version of the standard published in 1991. It defined the specifications for commercial building cabling systems, focusing on structured cabling for both voice and data.
+
+- TIA/EIA-568-B: This version was an update released in 2001, which revised and expanded upon the previous standard. It included additional specifications and recommendations for higher performance cabling categories (such as Cat 5e, Cat 6, and beyond) and improved methods for testing and certification.
+
+![tia568.jpg](../img/tia568.jpg)
+
+- **Straight-Through cable**: This type of cable is the most common and is used to connect devices that have different functions within a network. For instance, connecting a computer to a switch or a router to a switch.
+    - This cables use the same TIA568 standard in both ends of the cable, either T-567A or T-568B but both ends need to be the same.
+- **Crossover cable**: It is specifically designed to connect devices that have similar functions, such as connecting two computers directly or two switches/routers directly without an intermediate device like a hub or a switch.
+    - This cable uses T-567A in oe of the ends of the cable and T-568B in the other ends.
+
+![tia_cables.png](../img/tia_cables.png)
+
+![tia_connecting_devices.png](../img/tia_connecting_devices.png)
+
 ## CISCO IOS Operating System
 
 Cisco IOS (Internetwork Operating System) is a proprietary operating system used in Cisco networking devices.
 
 Cisco has graphical user interfaces but using the command line is quick faster and more common.
+
+### Initial Configuration
+
+When performing an initial configuration in a Cisco device it is expected to not have any configuration that allows us to connect to the computer remotely.
+
+We can still connect to the device if we have physical access and a console cable to connect a computer into the console port.
+
+The console port is commonly used for initial configuration when we have physical access to the device.
+
+<video controls>
+  <source src="../img/packet_tracer_console_connection.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ## TCP
 
