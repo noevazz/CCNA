@@ -75,6 +75,21 @@ You can download the file here: [handshake.pcap](./handshake.pcap)
 
 ![wireshark_handshake.png](../../../img/wireshark_handshake.png)
 
+In the image above:
+
+- First packet is from the client which wants to stablish a TCP connection, the client sent this first packet with a sequence number of Seq=0.
+- Second packet is from the web server acknowledging the seq number from the client, that is ack=1 (0+1), and also the we server sent its own sequence number in this packet: seq=0.
+- Third and last packet is from the client, it acknowledge the sequence number of the web server, that is ack=1, and also sent the next sequence, that is seq=1.
+
+Here is an image of what happened:
+
+![](../../../img/3wayhandshake.png)
+
+> The Source and Destination addresses (127.0.0.1) are the same because I did everything in the same laptop.
+
+In actual network communications, the sequence and acknowledgment numbers can start in different numbers.
+
+
 ## Case 2
 
 In this other case we are going to run the same flask app but now we are going to access the page from another device in the same network so we can see different IP addresses for source and destination.

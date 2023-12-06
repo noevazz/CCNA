@@ -549,6 +549,8 @@ The three-way handshake is a fundamental process used by TCP (Transmission Contr
 
 At this point, the three-way handshake is completed, and a reliable, bidirectional communication channel is established between the client and server. Both sides have exchanged initial sequence numbers (SeqA and SeqB) and confirmed their readiness to communicate by acknowledging each other's sequence numbers. Subsequently, data transmission can occur in both directions over this established TCP connection.
 
+If you want to perform a lab about the 3 way handshake visit [lab_handshake](./labs/handshake/lab_handshake.md)
+
 
 
 
