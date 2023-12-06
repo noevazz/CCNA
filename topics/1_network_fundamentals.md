@@ -256,7 +256,7 @@ Again, people are not always using the technical jargon son it is fine you call 
 
 Modem also provide services, for example:
 
-- DHC server
+- DHCP server
 - DNS server
 - Firewall: firewalls can be physical or logical (which is the case of the home routers)
 
