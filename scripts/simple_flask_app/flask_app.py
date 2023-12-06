@@ -29,6 +29,10 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def root():
+    return 'Root Page\n'
+
 @app.route('/greeting', methods=['GET'])
 def hello():
     return 'Hello World!\n'
@@ -38,4 +42,4 @@ def json():
     return jsonify({'name': "noe", "age": 28})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
