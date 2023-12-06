@@ -74,3 +74,36 @@ Open the packet capture with wireshark.
 You can download the file here: [handshake.pcap](./handshake.pcap)
 
 ![wireshark_handshake.png](../../../img/wireshark_handshake.png)
+
+## Case 2
+
+In this other case we are going to run the same flask app but now we are going to access the page from another device in the same network so we can see different IP addresses for source and destination.
+
+### Steps for case 2
+
+1. Run the flask app.
+2. Run the same tcpdum command as in the first exercise BUT CHANGE THE INTERFACE.\
+In my case I ran this command to capture traffic in my wireless interface: `sudo tcpdump -i wlo1 tcp -n -v -w handshakeSameNetwork.pcap`
+3. Access the flask app from another device in the same network.\
+I did it in my celLphone:
+![flask_app_from_celphone.jpg](../../../img/flask_app_from_celphone.jpg)
+4. Let tcpdump capture the packets and then stop the capture and stop the web server.
+
+This is the vew from my laptop:
+![handshake_same_network.png](../../../img/handshake_same_network.png)
+
+
+Now you can review the capture with wireshark,you can download the capture here [handshakeSameNetwork.pcap](./handshakeSameNetwork.pcap).
+
+![wireshark_handshake_same_network.png](../../../img/wireshark_handshake_same_network.png)
+
+In the image above you can see the packet capture, pay attention only to the first three packets, those are the ones that belong to the 3 way hand shake.
+
+In this case the web server has the IP address 192.168.1.7\
+And the client has the IP address of 192.168.1.14.
+
+- The first packet is from the client to the we server
+- The second packet from the web server to the client
+- And the last packet from the client to the web server.
+
+This time the sequence and ack numbers where the same as in the first exercise.
